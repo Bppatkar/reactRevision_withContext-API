@@ -1,10 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Details from "./components/Details";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="flex h-screen w-screen">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details/:id" element={<Details />} />
+      </Routes>
     </div>
   );
 };
