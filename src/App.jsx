@@ -5,7 +5,7 @@ import Details from "./components/Details";
 
 const App = () => {
   return (
-    <div className="flex h-screen w-screen">
+    <div className="min-h-screen w-full bg-slate-50">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/details/:id" element={<Details />} />
